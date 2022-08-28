@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLoginApp", "WpfLoginApp\WpfLoginApp.csproj", "{188D9509-938E-482E-AD0E-9A4921D663A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUiTestApp", "ModernUiTestApp\ModernUiTestApp.csproj", "{A811D388-5D19-4188-90D2-A31AEE5CF4A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPracticeApp", "WpfPracticeApp\WpfPracticeApp.csproj", "{26008D32-FDCA-45C5-A727-AE8D5766C19C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoSensorMonApp", "PhotoSensorMonApp\PhotoSensorMonApp.csproj", "{829B49FB-66D3-4A2C-A4DC-8DD1CB5503E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTestApp", "WpfTestApp\WpfTestApp.csproj", "{3DD41974-89DC-41B3-888C-687D2BDD3327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FineDustMonApp", "FineDustMonApp\FineDustMonApp.csproj", "{E1012B08-2D6F-464B-B8E2-70AF4EC0009C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Result", "Result", "{78E0D0F0-E58A-4BA2-BEF2-0A607FC2ECAF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\ResultImg\FineDustApp.png = ..\..\ResultImg\FineDustApp.png
+		..\..\ResultImg\SensorMon.png = ..\..\ResultImg\SensorMon.png
+		..\..\ResultImg\WpfBike.png = ..\..\ResultImg\WpfBike.png
+		..\..\ResultImg\WpfBike1.png = ..\..\ResultImg\WpfBike1.png
+		..\..\ResultImg\WpfBIke2.png = ..\..\ResultImg\WpfBIke2.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{188D9509-938E-482E-AD0E-9A4921D663A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188D9509-938E-482E-AD0E-9A4921D663A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188D9509-938E-482E-AD0E-9A4921D663A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188D9509-938E-482E-AD0E-9A4921D663A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A811D388-5D19-4188-90D2-A31AEE5CF4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A811D388-5D19-4188-90D2-A31AEE5CF4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A811D388-5D19-4188-90D2-A31AEE5CF4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A811D388-5D19-4188-90D2-A31AEE5CF4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26008D32-FDCA-45C5-A727-AE8D5766C19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26008D32-FDCA-45C5-A727-AE8D5766C19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26008D32-FDCA-45C5-A727-AE8D5766C19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26008D32-FDCA-45C5-A727-AE8D5766C19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829B49FB-66D3-4A2C-A4DC-8DD1CB5503E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829B49FB-66D3-4A2C-A4DC-8DD1CB5503E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829B49FB-66D3-4A2C-A4DC-8DD1CB5503E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829B49FB-66D3-4A2C-A4DC-8DD1CB5503E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD41974-89DC-41B3-888C-687D2BDD3327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD41974-89DC-41B3-888C-687D2BDD3327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD41974-89DC-41B3-888C-687D2BDD3327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD41974-89DC-41B3-888C-687D2BDD3327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1012B08-2D6F-464B-B8E2-70AF4EC0009C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1012B08-2D6F-464B-B8E2-70AF4EC0009C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1012B08-2D6F-464B-B8E2-70AF4EC0009C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1012B08-2D6F-464B-B8E2-70AF4EC0009C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D3E4407-07BD-481C-B0FF-B95AD95FBBEF}
+	EndGlobalSection
+EndGlobal
