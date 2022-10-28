@@ -202,3 +202,72 @@ namespace MultiInterfaceInheritance
 }
 ---
 ## 5. 인터페이스의 기본 구현 메소드 
+- 인터페이스가 선언하는 메소드는 파생될 클래스가 무엇을 구현해야 할지를 정의하는 역할만 했음
+- 기본 구현 메소드는 구현부를 가지는 메소드인데 다른 메소드와 역할이 약간 다름 
+```cs
+// ex)
+interface ILogger
+{
+    void WriteLog(string message);
+}
+
+class ConsoleLogger : ILogger
+{
+    public void WriteLog(string message)
+    {
+        Console.WriteLine($"{DtaeTime.Now.ToLocalTime()}, {message}");
+    }
+}
+``` 
+- ConsoleLogger는 ILogger 인터페이스를 상속하는 클래스 
+- ILogger에 WriteLog()가 선언되어 있기 때문에 ConsoleLogger는 WriteLog() 메소드를 오버라이딩 해야함 
+
+- 이러한 상황에서 ILogger의 파생 클래스가 많이 생기고 상속하는 클래스들이 레거시 코드가 됐을 때 ILogger에 새로운 메소드를 추가할 때는 주의가 필요 
+```cs
+// ex)
+interface ILogger
+{
+    void WriteLog(string message);
+    void WrtieError(string error);
+}
+```
+-> 이 결과 ILogger를 상속하는 모든 클래스에는 컴파일 에러가 발생 
+- 기본 구현 메소드를 사용하여 인터페이스에 새로운 메소드를 추가할 때 기본적인 구현체를 갖도록 해서 컴파일 에러를 막을 수 있다. 
+```cs 
+// ex) 기본 구현 메소드 구현 예 
+interface ILogger
+{
+    void WriteLog(string message);
+    void WrtieError(string error)
+    {
+        WriteLog($"Error: {error}");
+    }
+}
+```
+- 인터페이스의 기본 구현 메소드는 참조로 업캐스팅했을 때만 사용할 수 있어 클래스에서 추가된 메소드를 호출할 가능성도 없음 
+---
+## 6. 추상 클래스 : 인터페이스와 클래스 사이 
+- 추상 클래스는 "구현"을 가질 수 있지만 인스턴스는 가질 수 없음 
+```cs 
+// ex) 선언 방법
+abstract class 클래스이름 {}
+```
+- 추상 클래스는 클래스에 더 가까움 -> 한정자를 지정하지 않으면 클래스와 같이 private으로 지정된다. 
+- 하지만 클래스와 다르게 인스턴스를 만들 수 없고 추상 메소드(Absbract Method)를 가질 수 있다. 
+- 추상 메소드란 추상 클래스가 인터페이스의 역할도 할 수 있게 하는 장치 -> 구현을 갖지는 못하지만 파생 클래스에서 반드시 구현하도록 강제하기 때문
+
+```cs
+// ex) 추상 메소드의 선언 예 
+abstract class AbstractBase
+{
+    public abstract void SomeMethod();
+}
+
+class Derived : Abstractbase
+{
+    public override void SomeMethod()
+    {
+        // Somthing 
+    }
+}
+```
