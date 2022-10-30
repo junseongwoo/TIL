@@ -2,6 +2,7 @@
 ## 도커의 구조 
 - 일반적으로 도커와 컨테이너는 서버에서 사용 
 <img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-1.jpg"  width="400" height="200"/>
+
 - **운영체제 위에 도커 엔진이 동작하고 그 위에서 컨테이너가 동작**
 
 ### 컨테이너 안에는 운영체제 '비슷한 것'
@@ -11,6 +12,7 @@
 ## 운영체제가 하는 일? 
 - 운영체제는 **소프트웨어나 프로그램의 명령을 하드웨어에 전달하는 역할**
 <img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-2.jpg"  width="400" height="200"/>
+
 - 프로그램에 적힌 것은 '초콜릿을 먹어라' 수준인데 자세한 사항은 운영체제가 풀어서 하드웨어에 지시 
 
 ### 컨테이너
@@ -18,13 +20,16 @@
 - 이것이 도커의 가장 큰 특징인데 본래 운영체제는 '커널' 부분과 '그 외 주변 부분'으로 구성된다.
 - '주변 부분'이 프로그램 연락 내용을 커널에 전달하고 커널이 하드웨어를 다룬다.
 - 도커에서는 컨테이너가 완전히 분리돼 있어 리눅스의 주변 부분이 커테이너 속 프로그램의 명령을 전달 받을 수 없다 -> 컨테이너 속 운영체제의 주변 부분이 들어 있어 명령을 전달하고 커널에 전달하는 구조로 되어 있다.
-<img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-3.jpg"  width="400" height="200"/>
+<img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-3.jpg"  width="400" height="400"/>
+
 - 컨테이너 속에 리눅스(비슷한 것)이 들어있다고 말하는 것은 바로 전체 리눅스 운영체제가 들어 있는 것이 아니라 주변 부분만 들어 있기 때문이다.
 ---
+
 ## 도커는 기본적으로 '리눅스'용이다.
 - 도커는 기본적으로 리눅스 OS에서만 동작한다.
 - 즉, 도커는 리눅스 컴퓨터에 독립된 격리 환경을 만드는 것, 리눅스에서만 동작 -> 컨테이너에서 동작할 프로그램도 리눅스용 프로그램이다.
---- 
+----
+
 # Section 2 : 도커 허브와 이미지, 컨테이너 
 ## 이미지와 컨테이너
 - 이미지는 컨테이너를 찍어내는 '빵틀'과 같은 것으로 컨테이너의 설계도(ISO 파일과 비슷) 역할을 한다. 
@@ -33,9 +38,11 @@
 - 이미지는 금형과 같은 역할로 하나만 있으며 여러 개의 컨테이너를 생성이 가능하다.
 ### 컨테이너로도 이미지를 만들 수 있다.
 
-<img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-4.jpg"  width="400" height="200"/>
+<img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-4.jpg"  width="600" height="200"/>
 
 - 컨테이너를 금형으로 만들어 이미지로 만드는 것이다. 
 -> 컨테이너로 이미지를 만들 수 없으면 여러 개의 컨테이너를 전부 수정해야하는 번거러움이 생긴다.
 
 ### 도커 엔진 간에 이동이 가능
+<img src="https://github.com/junseongwoo/TIL/blob/main/Docker/dkkb/img/2-1-5.jpg"  width="600" height="400"/>
+
