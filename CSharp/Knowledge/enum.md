@@ -73,5 +73,5 @@ public static void Main()
 }
 ```
 ---
-# | Enum 클래스 
+# | Enum 클래스 (System.Enum 형식)
 https://learn.microsoft.com/ko-kr/dotnet/api/system.enum?view=net-6.0
