@@ -91,4 +91,14 @@ static void Main(string[] args)
 - 따라서 Abort() 메소드를 호출할 때는 처리 시간을 반드시 염두해야 한다.
 
 ## | 1.3 스레드의 일생과 상태 변화 
-- 
+- .Net은 스레드의 상태를 ThreadState 열거형에 정의 했다.
+  
+|상태|설명|
+|---|---|
+|Unstarted|---|
+|Running||
+|Suspended||
+|WaitSleepJoin||
+|Aborted||
+|Stopped||
+|Background||
