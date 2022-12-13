@@ -1,3 +1,5 @@
+# https://fastapi.tiangolo.com/ko/
+
 from typing import Union  
 from fastapi import FastAPI  
 
